@@ -1,0 +1,15 @@
+apiVersion: extensions/v1beta1
+kind: Ingress
+metadata:
+  annotations:
+    kubernetes.io/ingress.class: nginx
+  name: apache 
+spec:
+  rules:
+  - host: apache.teamk8s.de
+    http:
+      paths:
+      - backend:
+          serviceName: apache
+          servicePort: 80
+        path: /
