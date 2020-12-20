@@ -40,7 +40,7 @@ spec:
     - protocol: TCP
       port: 80
       targetPort: 80
-´´´
+```
 
 ## Create ingress resource to make service accessable from internet via ingress nginx
 
@@ -60,4 +60,4 @@ spec:
           serviceName: apache
           servicePort: 80
         path: /
-´´´
+```
