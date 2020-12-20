@@ -24,13 +24,13 @@ add-apt-repository \
    stable"
 apt-get update
 apt-get -y install docker-ce docker-ce-cli containerd.io
-´´´
+```
 
 ## Install Rancher Server on host01
 
 ```
 docker run --privileged -d --restart=unless-stopped -p 80:80 -p 443:443 rancher/rancher
-´´´
+```
 
 ## Configure Rancher
 
